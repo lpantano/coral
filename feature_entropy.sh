@@ -22,13 +22,12 @@
 # compute read-position-entropy features for all loci
 
 if [ $# -lt 3 ]; then
-  echo "USAGE: $0 inbam config_file chromInfo" >&2
+  echo "USAGE: $0 inbam config_file" >&2
   exit 1
 fi
 
 bam=$1
 config=$2
-chrominfo=$3
 
 source $config
 
